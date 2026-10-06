@@ -1,0 +1,32 @@
+[project]
+name = "langevin_flow_maps"
+version = "0.0.1"
+requires-python = ">=3.10"
+dependencies = [
+    "ase>=3.29.0",
+    "deeptime>=0.4.5",
+    "equinox>=0.13.8",
+    "h5py>=3.16.0",
+    "huggingface-hub>=0.34",
+    "jax[cuda12]>=0.6.2",
+    "matplotlib>=3.10",
+    "openmm>=8.6.0",
+    "optax>=0.2.8",
+    "pot>=0.9.7.post1",
+    "wandb>=0.28.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = ["langevin_flow_maps/*"]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

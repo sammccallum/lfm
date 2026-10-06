@@ -1,0 +1,24 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Data
+data/
+
+# Checkpoints
+artifacts/
+*.eqx
+*.npz
+
+# Agents
+AGENTS.md
+
+# Wandb
+wandb/
